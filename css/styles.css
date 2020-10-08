@@ -1,0 +1,116 @@
+/* 
+- ideas to add / change 
+
+- make page responsive 
+- add variables for colors
+- change values to em/rem units 
+*/
+
+/* GENERAL STYLING */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.container p {
+  margin: 20px auto;
+  line-height: 1.5rem;
+}
+
+/* Header styles */
+
+.main-header {
+  width: 100%;
+  min-height: 80px;
+  background-color: #eee;
+  color: #aaa;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-nav {
+  width: 50%;
+  margin: 20px;
+}
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  list-style: none;
+}
+.main-nav ul li {
+  margin: 0 auto;
+}
+.main-nav ul li a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #aaa;
+}
+
+/* PROJECTS */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project {
+  text-align: center;
+  margin: 30px auto;
+  width: 40%;
+  min-width: 300px;
+}
+.project h3 {
+  margin: 10px;
+}
+
+/* CREATEDBY MEMBERS SECTION */
+#member-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.member {
+  width: 300px;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  min-height: 80px;
+  background-color: #eee;
+  color: #aaa;
+}
+
+@media (min-width: 768px) {
+  .main-nav ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+}
