@@ -17,4 +17,10 @@ const members = [
     country: "New Zealand",
     url: "https://github.com/IsaacArnold"
   },
+  {
+    name: "Apoorva",
+    place: "Meerut",
+    country: "India",
+    url: "https://github.com/pi-rate14",
+  },
 ];
