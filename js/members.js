@@ -11,4 +11,10 @@ const members = [
     country: "the Netherlands",
     url: "https://www.rohald.codes",
   },
+  {
+    name: "Isaac",
+    place: "Tauranga",
+    country: "New Zealand",
+    url: "https://github.com/IsaacArnold"
+  },
 ];
