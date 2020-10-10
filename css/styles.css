@@ -78,6 +78,10 @@ span {
   color: #93c3da;
 }
 
+.main-nav ul li a:hover {
+  color: #fb8ae2;
+}
+
 /* PROJECTS */
 
 .projects {
@@ -118,9 +122,26 @@ span {
 }
 .member {
   width: 300px;
-  padding: 20px;
-  background-color: #ddd;
+  padding: 30px;
+  background: rgb(121,114,218);
+  background: linear-gradient(90deg, rgba(121,114,218,1) 0%, rgba(251,138,226,1) 97%);
   border-radius: 10px;
+  color: #fff;
+}
+
+.member a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.member h2::before {
+    content: "";
+    display: block;
+    background: url("../img/profile.svg") no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
 /* FOOTER */

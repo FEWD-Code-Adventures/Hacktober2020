@@ -23,4 +23,10 @@ const members = [
     country: "India",
     url: "https://github.com/pi-rate14",
   },
+  {
+    name: "Brigitta Varga",
+    place: "Bern",
+    country: "Switzerland",
+    url: "https://github.com/brigittavarga",
+  },
 ];
