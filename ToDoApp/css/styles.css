@@ -26,3 +26,21 @@ input {
 h1 {
   margin: 10px 0;
 }
+#btn__create{
+  padding: 10px 20px;
+  background-color: rgb(185, 185, 185);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#todo-input{
+  width: 50%;
+  padding: 10px 40px;
+  border: 1px solid #555555;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
