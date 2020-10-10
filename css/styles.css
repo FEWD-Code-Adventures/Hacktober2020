@@ -11,6 +11,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter Bold", "Helvetica", "Arial", san-serif;
+}
+body {
+  background-color: #092540;
 }
 .flex-container {
   display: flex;
@@ -26,16 +30,25 @@
 .container p {
   margin: 20px auto;
   line-height: 1.5rem;
+  color: #93c3da;
 }
-
-/* Header styles */
-
-.main-header {
+.main-header,
+footer {
   width: 100%;
   min-height: 80px;
   background-color: #183d5d;
   color: #fb8ae2;
 }
+h1,
+h2 {
+  color: white;
+}
+h3,
+span {
+  color: #fb8ae2;
+}
+/* Header styles */
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -62,7 +75,7 @@
 .main-nav ul li a {
   font-size: 1.3rem;
   text-decoration: none;
-  color: white;
+  color: #93c3da;
 }
 
 /* PROJECTS */
@@ -72,6 +85,10 @@
   flex-wrap: wrap;
 }
 .project {
+  background-color: #183d5d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   margin: 30px auto;
   width: 40%;
@@ -79,6 +96,14 @@
 }
 .project h3 {
   margin: 10px;
+}
+.project-link {
+  text-decoration: none;
+  color: white;
+  background-color: #092540;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 25px;
 }
 
 /* CREATEDBY MEMBERS SECTION */
@@ -99,13 +124,6 @@
 }
 
 /* FOOTER */
-
-footer {
-  width: 100%;
-  min-height: 80px;
-  background-color: #eee;
-  color: #aaa;
-}
 
 @media (min-width: 768px) {
   .main-nav ul {
