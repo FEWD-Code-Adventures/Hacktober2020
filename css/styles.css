@@ -100,6 +100,11 @@ span {
 }
 .project h3 {
   margin: 10px;
+  text-transform: uppercase;
+  background: #fff;
+  font-size: 1.5em;
+  border-radius: 5px;
+  padding: 15px;
 }
 .project-link {
   text-decoration: none;
@@ -108,6 +113,45 @@ span {
   padding: 15px;
   margin: 20px;
   border-radius: 25px;
+  position: relative;
+  z-index: 0;
+}
+
+.project-link::before {
+    content: "";
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.project-link::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.project-link:active:after {
+  background: transparent;
+}
+
+.project-link:hover:before {
+  opacity: 1;
 }
 
 /* CREATEDBY MEMBERS SECTION */
@@ -129,6 +173,13 @@ span {
   color: #fff;
 }
 
+.member:hover {
+  width: 110%;
+  height: 110%;
+  z-index: 999;
+  background: black;
+}
+
 .member a {
   color: #fff;
   text-decoration: none;
@@ -138,10 +189,20 @@ span {
     content: "";
     display: block;
     background: url("../img/profile.svg") no-repeat;
-    width: 100px;
-    height: 100px;
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 60px;
     margin: 0 auto;
     padding-bottom: 10px;
+}
+
+/* Keyframes */
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 /* FOOTER */
