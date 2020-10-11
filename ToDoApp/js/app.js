@@ -15,14 +15,19 @@ const submitTodo = document.querySelector("#btn__create");
 const todoList = document.querySelector("#todolist");
 
 const createTodo = () => {
-  const todo = document.createElement("DIV");
-  todo.classList.add("todo");
-  const todoHTML = `
-          <h2 class="todo__title">${todoInput.value}</h2>
-    `;
-  todo.innerHTML = todoHTML;
-  todoInput.value = "";
-  todoList.append(todo);
+  if(todoInput.value){
+    const todo = document.createElement("DIV");
+    todo.classList.add("todo");
+    const todoHTML = `
+            <h2 class="todo__title">${todoInput.value}</h2>
+      `;
+    todo.innerHTML = todoHTML;
+    todoInput.value = "";
+    todoList.append(todo);
+  }
+  else{
+    alert("please add valid task");
+  }
 };
 
 submitTodo.addEventListener("click", createTodo);
