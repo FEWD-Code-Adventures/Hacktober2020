@@ -9,11 +9,16 @@
   <body>
     <div class="container">
       <input id="todo-input" type="text" placeholder="Add Activity"/>
+      <select name="importance" id="importance" class="importance">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
       <button id="btn__create">Create ToDo</button>
       <h1>ToDos</h1>
       <div id="todolist">
         <!-- JavaScript adds todo here -->
-        <!-- <div class="todo">
+        <div class="todo">
           <h2 class="todo__title">Todo Name</h2>
           <p class="todo__description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, commodi?
@@ -27,7 +32,7 @@
           </div>
           <button class="btn__complete">Complete</button>
           <button class="btn__delete">Delete</button>
-        </div> -->
+        </div>
       </div>
       <h1>Completed</h1>
       <!-- <div class="completed">

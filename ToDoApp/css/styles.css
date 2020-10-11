@@ -23,24 +23,33 @@ input {
   padding: 5px;
   background-color: #eee;
 }
+.todo[data-importance="low"] {
+  border-left: 5px solid yellow;
+}
+.todo[data-importance="medium"] {
+  border-left: 5px solid orange;
+}
+.todo[data-importance="high"] {
+  border-left: 5px solid red;
+}
 h1 {
   margin: 10px 0;
 }
-#btn__create{
+#btn__create {
   padding: 10px 20px;
   background-color: rgb(185, 185, 185);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#todo-input{
+#todo-input {
   width: 50%;
   padding: 10px 40px;
   border: 1px solid #555555;
 }
 
-h1{
+h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h2{
+h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
 }

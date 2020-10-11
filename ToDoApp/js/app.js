@@ -16,8 +16,12 @@ const todoList = document.querySelector("#todolist");
 
 const createTodo = () => {
   if(todoInput.value){
+    let importance = document.querySelector('#importance');
+    importance = importance.options[importance.selectedIndex].value;
+    console.log(importance);
     const todo = document.createElement("DIV");
     todo.classList.add("todo");
+    todo.dataset.importance = importance;
     const todoHTML = `
             <h2 class="todo__title">${todoInput.value}</h2>
       `;
