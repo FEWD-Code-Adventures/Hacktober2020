@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    margin: 20px auto;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    max-width: 315px;
+    max-height: 315px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-template-rows: repeat(auto-fit, 150px);
+    gap: 15px;
+    grid-template-areas: 
+    "one two"
+    "three three";
+}
+
+.value-one {
+    grid-area: one;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.value-two {
+    grid-area: two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.value-three {
+    grid-area: three;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 50px;
+}

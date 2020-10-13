@@ -35,6 +35,7 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .container p {
   margin: 20px auto;
@@ -56,6 +57,7 @@ h3,
 span {
   color:var(--main-header-color);
 }
+
 /* Header styles */
 
 .header-container {
@@ -89,6 +91,27 @@ span {
 
 .main-nav ul li a:hover {
   color: var(--main-header-color);
+}
+
+.coding-quote-block {
+  margin-bottom: 1.5rem;
+}
+
+.coding-quotes-title {
+  margin-bottom: 16px;
+}
+
+.coding-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #93c3da;
+}
+
+.coding-quote-author {
+  margin-left: 16px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bcd1db;
 }
 
 /* PROJECTS */
@@ -203,6 +226,16 @@ span {
 .member a {
   color: var(--second-header-color);
   text-decoration: none;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  padding: 4px 8px;
+  position: relative;
+  top: 10px;;
+}
+
+.member a:hover {
+  background: whitesmoke;
+  color: black;
 }
 
 .member h2::before {
