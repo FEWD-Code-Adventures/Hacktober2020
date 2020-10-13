@@ -5,6 +5,15 @@
 - add variables for colors
 - change values to em/rem units 
 */
+/* VARIABLES */
+:root {
+--main-background-color: #092540;
+--second-background-color: #183d5d;
+--main-header-color:  #fb8ae2;
+--container-color: #93c3da;
+--second-header-color: #fff;
+}
+
 
 /* GENERAL STYLING */
 * {
@@ -14,7 +23,7 @@
   font-family: "Inter Bold", "Helvetica", "Arial", san-serif;
 }
 body {
-  background-color: #092540;
+  background-color: var(--main-background-color);
 }
 .flex-container {
   display: flex;
@@ -31,22 +40,22 @@ body {
 .container p {
   margin: 20px auto;
   line-height: 1.5rem;
-  color: #93c3da;
+  color: var(--container-color);
 }
 .main-header,
 footer {
   width: 100%;
   min-height: 80px;
-  background-color: #183d5d;
-  color: #fb8ae2;
+  background-color: var(--second-background-color);
+  color: var(--main-header-color);
 }
 h1,
 h2 {
-  color: white;
+  color: var(--second-header-color);
 }
 h3,
 span {
-  color: #fb8ae2;
+  color:var(--main-header-color);
 }
 
 /* Header styles */
@@ -77,11 +86,11 @@ span {
 .main-nav ul li a {
   font-size: 1.3rem;
   text-decoration: none;
-  color: #93c3da;
+  color:var(--container-color);
 }
 
 .main-nav ul li a:hover {
-  color: #fb8ae2;
+  color: var(--main-header-color);
 }
 
 .coding-quote-block {
@@ -112,7 +121,7 @@ span {
   flex-wrap: wrap;
 }
 .project {
-  background-color: #183d5d;
+  background-color: var(--second-background-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -124,15 +133,15 @@ span {
 .project h3 {
   margin: 10px;
   text-transform: uppercase;
-  background: #fff;
+  background: var(--second-header-color);
   font-size: 1.5em;
   border-radius: 5px;
   padding: 15px;
 }
 .project-link {
   text-decoration: none;
-  color: white;
-  background-color: #092540;
+  color:var(--second-header-color);
+  background-color: var(--main-background-color);
   padding: 15px;
   margin: 20px;
   border-radius: 25px;
@@ -204,7 +213,7 @@ span {
   background: rgb(121, 114, 218);
   background: linear-gradient(90deg, rgba(121, 114, 218, 1) 0%, rgba(251, 138, 226, 1) 97%);
   border-radius: 10px;
-  color: #fff;
+  color: var(--second-header-color);
 }
 
 .member:hover {
@@ -215,7 +224,7 @@ span {
 }
 
 .member a {
-  color: #fff;
+  color: var(--second-header-color);
   text-decoration: none;
   border: 2px solid whitesmoke;
   border-radius: 8px;

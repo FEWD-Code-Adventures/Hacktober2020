@@ -36,6 +36,12 @@ const members = [
     url: "https://github.com/NamanJindal03",
   },
   {
+    name: "Silvia Ramos",
+    place: "London",
+    country: "United Kingdom",
+    url: "https://www.silviaramos.me",
+  },
+  {
     name: "Brandon Gormley",
     place: "New Jersey",
     country: "United States",
