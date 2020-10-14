@@ -1,53 +1,134 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
-
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #f0f3fd;
+}
+.hidden {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0);
+}
+h1 {
+  font: bold 50px arial, sans-serif;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.7);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+h5 {
+  color: grey;
+  font-weight: 500;
+  margin-top: 0;
+}
 button {
-    margin: 20px auto;
+  background: rgb(143, 6, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(143, 6, 247, 1) 0%,
+    rgba(53, 53, 185, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+.gradient {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(143, 6, 247, 1) 0%,
+    rgb(66, 66, 173) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  z-index: 1;
 }
 
+.gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(53, 53, 185, 1) 44%,
+    rgba(143, 6, 247, 1) 100%
+  );
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.gradient:hover::before {
+  opacity: 1;
+}
 .page-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 80%;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 .grid-container {
-    display: grid;
-    justify-content: center;
-    max-width: 315px;
-    max-height: 315px;
-    margin: auto;
-    grid-template-columns: repeat(auto-fit, 150px);
-    grid-template-rows: repeat(auto-fit, 150px);
-    gap: 15px;
-    grid-template-areas: 
+  display: grid;
+  justify-content: center;
+  max-width: 315px;
+  max-height: 315px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-template-rows: repeat(auto-fit, 150px);
+  gap: 15px;
+  grid-template-areas:
     "one two"
     "three three";
 }
-
+.value-one,
+.value-two,
+.value-three {
+  border-radius: 30px;
+  color: white;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 8px 0 rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.value-one:hover,
+.value-two:hover,
+.value-three:hover {
+  box-shadow: 1px 5px 12px 2px rgba(0, 0, 0, 0.7);
+}
 .value-one {
-    grid-area: one;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: one;
 }
 .value-two {
-    grid-area: two;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: two;
 }
 .value-three {
-    grid-area: three;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: three;
 }
 
 footer {
-    margin-top: 50px;
+  margin-top: 50px;
 }
