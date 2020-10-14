@@ -114,6 +114,27 @@ span {
   color: #bcd1db;
 }
 
+.coding-quote-block {
+  margin-bottom: 1.5rem;
+}
+
+.coding-quotes-title {
+  margin-bottom: 16px;
+}
+
+.coding-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #93c3da;
+}
+
+.coding-quote-author {
+  margin-left: 16px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bcd1db;
+}
+
 /* PROJECTS */
 
 .projects {
@@ -149,7 +170,28 @@ span {
   z-index: 0;
 }
 
-.project-link::before {
+.project-button {
+  text-decoration: none;
+  color: white;
+  background-color: #092540;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+  border: none;
+  font-size: 16px;
+}
+
+.lets-code-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.project-link::before,
+.project-button::before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -177,7 +219,8 @@ span {
   border-radius: 10px;
 }
 
-.project-link::after {
+.project-link::after,
+.project-button::after {
   z-index: -1;
   content: "";
   position: absolute;
@@ -189,12 +232,18 @@ span {
   border-radius: 10px;
 }
 
-.project-link:active:after {
+.project-link:active:after,
+.project-button:active:after {
   background: transparent;
 }
 
-.project-link:hover:before {
+.project-link:hover:before,
+.project-button:hover:before {
   opacity: 1;
+}
+
+.project-button:hover {
+  cursor: pointer;
 }
 
 /* CREATEDBY MEMBERS SECTION */
