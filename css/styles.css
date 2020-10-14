@@ -293,6 +293,24 @@ span {
 }
 
 /* FOOTER */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer p {
+align-self: center;
+}
+footer a{
+  text-decoration: none;
+  color: var(--second-header-color);
+}
+footer a:hover{
+  color: var(--main-header-color);
+}
+
+
+/* MEDIA QUERIES */
 
 @media (min-width: 768px) {
   .main-nav ul {
