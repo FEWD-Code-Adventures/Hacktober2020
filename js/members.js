@@ -39,7 +39,7 @@ const members = [
     name: "Silvia Ramos",
     place: "London",
     country: "United Kingdom",
-    url: "https://www.silviaramos.me",
+    url: "www.silviaramos.me",
   },
   {
     name: "Brandon Gormley",
