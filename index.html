@@ -1,69 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FEWD Hacktober 2020</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <div class="flex-container">
-      <header class="main-header">
-        <div class="header-container">
-          <h1 class="main-heading">Front End Web Development Hacktober 2020</h1>
-          <nav class="main-nav">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./createdby.html">Created by</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <div class="container">
-          <section class="about">
-            <h2 class="about-heading">Get started with <span>Pull Requests</span></h2>
-            <p class="about-paragraph">
-              Hey there fellow Treehouse Techdegree students! I've created this repository for
-              everyone in our amazing Slack community :awesome: This way we all get the opportunity
-              to participate in the Hacktober Fest 2020 and are able to get a feeling on
-              contributing to an open source project no matter your coding experience!
-            </p>
-            <p class="about-paragraph">
-              In this repo I got a few things set up for you all to explore and collaborate on. I
-              kept it very basic to start with so everybody gets the chance to join us on this
-              adventure. Feel free to change the styling of this page, add some more HTML or create
-              some interactivity with JavaScript.
-            </p>
-            <p class="about-paragraph">
-              Make sure to read the readme file of this repository to learn how to make a Pull
-              Request. To give this a first try I suggest you checkout the members.js file and add
-              your details. By doing this we'll get a nice list of students that have participated
-              on this project.
-            </p>
-          </section>
-          <h2>Side Projects</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FEWD Hacktober 2020</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="flex-container">
+    <header class="main-header">
+      <div class="header-container">
+        <h1 class="main-heading">Front End Web Development Hacktober 2020</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./createdby.html">Created by</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="about">
+          <h2 class="about-heading">Get started with <span>Pull Requests</span></h2>
+          <p class="about-paragraph">
+            Hey there fellow Treehouse Techdegree students! I've created this repository for
+            everyone in our amazing Slack community :awesome: This way we all get the opportunity
+            to participate in the Hacktober Fest 2020 and are able to get a feeling on
+            contributing to an open source project no matter your coding experience!
+          </p>
+          <p class="about-paragraph">
+            In this repo I got a few things set up for you all to explore and collaborate on. I
+            kept it very basic to start with so everybody gets the chance to join us on this
+            adventure. Feel free to change the styling of this page, add some more HTML or create
+            some interactivity with JavaScript.
+          </p>
+          <p class="about-paragraph">
+            Make sure to read the readme file of this repository to learn how to make a Pull
+            Request. To give this a first try I suggest you checkout the members.js file and add
+            your details. By doing this we'll get a nice list of students that have participated
+            on this project.
+          </p>
+        </section>
+        <h2>Side Projects</h1>
           <section class="projects">
             <div class="project">
               <h3 class="project-name">To Do List</h3>
               <p class="project-description">
-                In this project we're creating a To Do list using JavaScript. This is a great project for creating dynamic content to a webpage. 
+                In this project we're creating a To Do list using JavaScript. This is a great project for creating
+                dynamic content to a webpage.
               </p>
               <a href="./ToDoApp/index.html" class="project-link">Go to project</a>
             </div>
+
             <div class="project">
-              <h3 class="project-name">To Do List</h3>
+              <h3 class="project-name">Random Color Generator</h3>
               <p class="project-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quaerat saepe autem
-                excepturi quis nisi laboriosam repellat adipisci libero assumenda.
+                Generate random hexidecimal values using this clever web-app. Explore the world of color! 
               </p>
-              <a href="./ToDoApp/index.html" class="project-link">Go to project</a>
+              <a href="color-generator/color-generator.html" class="project-link">Go to project</a>
+            </div>
+
+            <div class="project">
+              <h3 class="project-name">Ready to Code?</h3>
+              <p class="project-description">
+                Quick little JS event listener to get you ready to code
+              </p>
+              <button class="project-button" id="project-button">Ready to code?</button>
+              <p class="lets-code-text" id="code-text"></p>
+            </div>
+            
+          </section>
+          <section class="coding-quotes-container">
+            <h2 class="coding-quotes-title">Coding Quotes</h2>
+            <div class="coding-quote-block">
+              <q class="coding-quote">Everybody in this country should learn to program a computer because it teaches
+                you
+                how to think</q>
+              <span class="coding-quote-author"> Steve Jobs</span>
+            </div>
+            <div class="coding-quote-block">
+              <q class="coding-quote">Think twice, code once</q>
+              <span class="coding-quote-author"> Waseem Latif</span>
             </div>
           </section>
-        </div>
-      </main>
-      <footer></footer>
-    </div>
-  </body>
+      </div>
+    </main>
+    <footer>
+      <p><small>&copy; 2020</small>  <a href="https://teamtreehouse.com/home" target="_blank">Treehouse</a></p>
+    </footer>
+
+  </div>
+  <script src="js/projects.js"></script>
+
+</body>
+
 </html>

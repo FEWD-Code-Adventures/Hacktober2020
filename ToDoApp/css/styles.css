@@ -41,27 +41,56 @@ input {
 }
 .todo[data-importance="high"] {
   border-left: 5px solid red;
+<<<<<<< HEAD
+}
+#btn__create {
+<<<<<<< HEAD
+  padding: 10px 25px;
+  background-color: #fff;
+=======
+  padding: 10px 20px;
+  background-color: rgb(185, 185, 185);
+=======
 }
 #btn__create {
   padding: 10px 25px;
   background-color: #fff;
+>>>>>>> 3d2b33f0ffc40a84daf1f52e0ea35903d60d6209
+>>>>>>> 2d573dc35f85a766a17b7e42644d2bb9be711eff
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #294C60;
   font-weight: bold;
   border: 3px solid #ADB6C4;
   transition: width 1.5s, height 1.5s, transform 0.8s;
+<<<<<<< HEAD
 }
 
 #btn__create:hover {
   transform: rotate(360deg);
 }
 
+=======
+}
+<<<<<<< HEAD
+=======
+
+#btn__create:hover {
+  transform: rotate(360deg);
+}
+
+>>>>>>> 3d2b33f0ffc40a84daf1f52e0ea35903d60d6209
+>>>>>>> 2d573dc35f85a766a17b7e42644d2bb9be711eff
 #todo-input {
   width: 50%;
   padding: 10px 40px;
   border: 1px solid #555555;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2d573dc35f85a766a17b7e42644d2bb9be711eff
 #importance {
   padding: 10px 25px;
   background-color: #ADB6C4;
@@ -71,14 +100,30 @@ input {
   color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 3d2b33f0ffc40a84daf1f52e0ea35903d60d6209
+>>>>>>> 2d573dc35f85a766a17b7e42644d2bb9be711eff
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 30px;
   color: #fff;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+=======
+>>>>>>> 2d573dc35f85a766a17b7e42644d2bb9be711eff
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
   margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+>>>>>>> 3d2b33f0ffc40a84daf1f52e0ea35903d60d6209
+>>>>>>> 2d573dc35f85a766a17b7e42644d2bb9be711eff
 }
