@@ -10,9 +10,9 @@ function generateColor() {
     valueOne.style.backgroundColor = `#${color}`;
     valueOne.textContent = `#${color}`;
     valueTwo.style.backgroundColor = `#${colorTwo}`;
-    valueTwo.textContent = `#${color}`;
+    valueTwo.textContent = `#${colorTwo}`;
     valueThree.style.backgroundColor = `#${colorThree}`;
-    valueThree.textContent = `#${color}`;
+    valueThree.textContent = `#${colorThree}`;
 }
 
 button.addEventListener('click', () => {
