@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.button {
+  border-radius: 2px;
+  background-color: PURPLE;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  align-self: center;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    max-width: 315px;
+    max-height: 315px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-template-rows: repeat(auto-fit, 150px);
+    gap: 15px;
+    grid-template-areas:
+    "one two"
+    "three three";
+}
+
+.value-one {
+    grid-area: one;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.value-two {
+    grid-area: two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.value-three {
+    grid-area: three;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 50px;
+}

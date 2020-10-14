@@ -5,6 +5,15 @@
 - add variables for colors
 - change values to em/rem units 
 */
+/* VARIABLES */
+:root {
+--main-background-color: #092540;
+--second-background-color: #183d5d;
+--main-header-color:  #fb8ae2;
+--container-color: #93c3da;
+--second-header-color: #fff;
+}
+
 
 /* GENERAL STYLING */
 * {
@@ -14,7 +23,7 @@
   font-family: "Inter Bold", "Helvetica", "Arial", san-serif;
 }
 body {
-  background-color: #092540;
+  background-color: var(--main-background-color);
 }
 .flex-container {
   display: flex;
@@ -26,27 +35,29 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .container p {
   margin: 20px auto;
   line-height: 1.5rem;
-  color: #93c3da;
+  color: var(--container-color);
 }
 .main-header,
 footer {
   width: 100%;
   min-height: 80px;
-  background-color: #183d5d;
-  color: #fb8ae2;
+  background-color: var(--second-background-color);
+  color: var(--main-header-color);
 }
 h1,
 h2 {
-  color: white;
+  color: var(--second-header-color);
 }
 h3,
 span {
-  color: #fb8ae2;
+  color:var(--main-header-color);
 }
+
 /* Header styles */
 
 .header-container {
@@ -75,11 +86,32 @@ span {
 .main-nav ul li a {
   font-size: 1.3rem;
   text-decoration: none;
-  color: #93c3da;
+  color:var(--container-color);
 }
 
 .main-nav ul li a:hover {
-  color: #fb8ae2;
+  color: var(--main-header-color);
+}
+
+.coding-quote-block {
+  margin-bottom: 1.5rem;
+}
+
+.coding-quotes-title {
+  margin-bottom: 16px;
+}
+
+.coding-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #93c3da;
+}
+
+.coding-quote-author {
+  margin-left: 16px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bcd1db;
 }
 
 /* PROJECTS */
@@ -89,7 +121,7 @@ span {
   flex-wrap: wrap;
 }
 .project {
-  background-color: #183d5d;
+  background-color: var(--second-background-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,15 +133,15 @@ span {
 .project h3 {
   margin: 10px;
   text-transform: uppercase;
-  background: #fff;
+  background: var(--second-header-color);
   font-size: 1.5em;
   border-radius: 5px;
   padding: 15px;
 }
 .project-link {
   text-decoration: none;
-  color: white;
-  background-color: #092540;
+  color:var(--second-header-color);
+  background-color: var(--main-background-color);
   padding: 15px;
   margin: 20px;
   border-radius: 25px;
@@ -117,6 +149,69 @@ span {
   z-index: 0;
 }
 
+.project-button {
+  text-decoration: none;
+  color: white;
+  background-color: #092540;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+  border: none;
+  font-size: 16px;
+}
+
+.lets-code-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+}
+
+.project-link::before,
+.project-button::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.project-link::after,
+.project-button::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+<<<<<<< HEAD
 .project-link::before {
   content: "";
   background: linear-gradient(
@@ -158,11 +253,20 @@ span {
 }
 
 .project-link:active:after {
+=======
+.project-link:active:after,
+.project-button:active:after {
+>>>>>>> 3d2b33f0ffc40a84daf1f52e0ea35903d60d6209
   background: transparent;
 }
 
-.project-link:hover:before {
+.project-link:hover:before,
+.project-button:hover:before {
   opacity: 1;
+}
+
+.project-button:hover {
+  cursor: pointer;
 }
 
 /* CREATEDBY MEMBERS SECTION */
@@ -181,7 +285,7 @@ span {
   background: rgb(121, 114, 218);
   background: linear-gradient(90deg, rgba(121, 114, 218, 1) 0%, rgba(251, 138, 226, 1) 97%);
   border-radius: 10px;
-  color: #fff;
+  color: var(--second-header-color);
 }
 
 .member:hover {
@@ -192,8 +296,18 @@ span {
 }
 
 .member a {
-  color: #fff;
+  color: var(--second-header-color);
   text-decoration: none;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  padding: 4px 8px;
+  position: relative;
+  top: 10px;;
+}
+
+.member a:hover {
+  background: whitesmoke;
+  color: black;
 }
 
 .member h2::before {
