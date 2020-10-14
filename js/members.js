@@ -29,10 +29,22 @@ const members = [
     country: "Switzerland",
     url: "https://github.com/brigittavarga",
   },
-   {
+  {
     name: "Naman Jindal",
     place: "Delhi",
     country: "India",
     url: "https://github.com/NamanJindal03",
+  },
+  {
+    name: "Silvia Ramos",
+    place: "London",
+    country: "United Kingdom",
+    url: "https://www.silviaramos.me",
+  },
+  {
+    name: "Brandon Gormley",
+    place: "New Jersey",
+    country: "United States",
+    url: "https://www.brandongormley.com",
   },
 ];

@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+  background-color: #294C60;
 }
 .container {
   width: 90%;
@@ -13,6 +17,11 @@ input {
   min-width: 250px;
   margin: 10px auto;
 }
+
+.tasks ul li {
+  list-style: none;
+}
+
 .todolist {
   margin: 0 auto;
 }
@@ -20,8 +29,9 @@ input {
   width: 90%;
   min-height: 40px;
   margin: 10px auto;
-  padding: 5px;
+  padding: 25px;
   background-color: #eee;
+  color: #294C60;
 }
 .todo[data-importance="low"] {
   border-left: 5px solid yellow;
@@ -32,24 +42,43 @@ input {
 .todo[data-importance="high"] {
   border-left: 5px solid red;
 }
-h1 {
-  margin: 10px 0;
-}
 #btn__create {
-  padding: 10px 20px;
-  background-color: rgb(185, 185, 185);
+  padding: 10px 25px;
+  background-color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #294C60;
+  font-weight: bold;
+  border: 3px solid #ADB6C4;
+  transition: width 1.5s, height 1.5s, transform 0.8s;
 }
+
+#btn__create:hover {
+  transform: rotate(360deg);
+}
+
 #todo-input {
   width: 50%;
   padding: 10px 40px;
   border: 1px solid #555555;
 }
 
+#importance {
+  padding: 10px 25px;
+  background-color: #ADB6C4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #fff;
+}
+
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 30px;
+  color: #fff;
 }
+
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
+  margin-bottom: 10px;
 }
