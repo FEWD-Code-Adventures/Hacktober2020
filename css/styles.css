@@ -114,27 +114,6 @@ span {
   color: #bcd1db;
 }
 
-.coding-quote-block {
-  margin-bottom: 1.5rem;
-}
-
-.coding-quotes-title {
-  margin-bottom: 16px;
-}
-
-.coding-quote {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: #93c3da;
-}
-
-.coding-quote-author {
-  margin-left: 16px;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #bcd1db;
-}
-
 /* PROJECTS */
 
 .projects {
