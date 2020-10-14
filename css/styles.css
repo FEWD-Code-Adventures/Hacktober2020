@@ -7,13 +7,12 @@
 */
 /* VARIABLES */
 :root {
---main-background-color: #092540;
---second-background-color: #183d5d;
---main-header-color:  #fb8ae2;
---container-color: #93c3da;
---second-header-color: #fff;
+  --main-background-color: #092540;
+  --second-background-color: #183d5d;
+  --main-header-color: #fb8ae2;
+  --container-color: #93c3da;
+  --second-header-color: #fff;
 }
-
 
 /* GENERAL STYLING */
 * {
@@ -55,7 +54,7 @@ h2 {
 }
 h3,
 span {
-  color:var(--main-header-color);
+  color: var(--main-header-color);
 }
 
 /* Header styles */
@@ -86,7 +85,7 @@ span {
 .main-nav ul li a {
   font-size: 1.3rem;
   text-decoration: none;
-  color:var(--container-color);
+  color: var(--container-color);
 }
 
 .main-nav ul li a:hover {
@@ -140,7 +139,7 @@ span {
 }
 .project-link {
   text-decoration: none;
-  color:var(--second-header-color);
+  color: var(--second-header-color);
   background-color: var(--main-background-color);
   padding: 15px;
   margin: 20px;
@@ -211,7 +210,6 @@ span {
   border-radius: 10px;
 }
 
-<<<<<<< HEAD
 .project-link::before {
   content: "";
   background: linear-gradient(
@@ -253,10 +251,6 @@ span {
 }
 
 .project-link:active:after {
-=======
-.project-link:active:after,
-.project-button:active:after {
->>>>>>> 3d2b33f0ffc40a84daf1f52e0ea35903d60d6209
   background: transparent;
 }
 
@@ -302,7 +296,7 @@ span {
   border-radius: 8px;
   padding: 4px 8px;
   position: relative;
-  top: 10px;;
+  top: 10px;
 }
 
 .member a:hover {
