@@ -48,6 +48,12 @@ const members = [
     url: "https://www.brandongormley.com",
   },
   {
+    name: "Tarik Dzambic",
+    place: "Tuzla",
+    country: "Bosnia and Herzegovina",
+    url: "https://github.com/DzambaTz",
+  },
+  {
     name: "Mahima Sharma",
     place: "Delhi",
     country: "India",
