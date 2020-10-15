@@ -113,6 +113,27 @@ span {
   color: #bcd1db;
 }
 
+.coding-quote-block {
+  margin-bottom: 1.5rem;
+}
+
+.coding-quotes-title {
+  margin-bottom: 16px;
+}
+
+.coding-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #93c3da;
+}
+
+.coding-quote-author {
+  margin-left: 16px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bcd1db;
+}
+
 /* PROJECTS */
 
 .projects {
@@ -210,47 +231,8 @@ span {
   border-radius: 10px;
 }
 
-.project-link::before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-.project-link::after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-.project-link:active:after {
+.project-link:active:after,
+.project-button:active:after {
   background: transparent;
 }
 
@@ -261,6 +243,24 @@ span {
 
 .project-button:hover {
   cursor: pointer;
+}
+
+
+#countdown {
+  font-size: 5rem;
+  margin: 0 auto;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+.countdown-text {
+  color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+  word-spacing: 40px;
+  position: relative;
+  top: 10px;
+  font-size: 2rem;
 }
 
 /* CREATEDBY MEMBERS SECTION */
