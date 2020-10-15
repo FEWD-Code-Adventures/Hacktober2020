@@ -1,9 +1,9 @@
-/* 
-- ideas to add / change 
+/*
+- ideas to add / change
 
-- make page responsive 
+- make page responsive
 - add variables for colors
-- change values to em/rem units 
+- change values to em/rem units
 */
 /* VARIABLES */
 :root {
@@ -149,6 +149,10 @@ span {
   margin: 30px auto;
   width: 40%;
   min-width: 300px;
+  transition: box-shadow .5s ease-in-out;
+}
+.project:hover {
+  box-shadow: 0px 1px 4px var(--second-header-color);
 }
 .project h3 {
   margin: 10px;
@@ -346,6 +350,7 @@ footer a{
 footer a:hover{
   color: var(--main-header-color);
 }
+
 
 
 /* MEDIA QUERIES */
