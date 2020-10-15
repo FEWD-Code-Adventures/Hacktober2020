@@ -246,6 +246,23 @@ span {
   cursor: pointer;
 }
 
+#countdown {
+  font-size: 5rem;
+  margin: 0 auto;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+.countdown-text {
+  color: whitesmoke;
+  margin: 0 auto;
+  text-align: center;
+  word-spacing: 40px;
+  position: relative;
+  top: 10px;
+  font-size: 2rem;
+}
+
 /* CREATEDBY MEMBERS SECTION */
 #member-container {
   width: 90%;
