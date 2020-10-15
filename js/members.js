@@ -15,7 +15,7 @@ const members = [
     name: "Isaac",
     place: "Tauranga",
     country: "New Zealand",
-    url: "https://github.com/IsaacArnold"
+    url: "https://github.com/IsaacArnold",
   },
   {
     name: "Apoorva",
@@ -46,5 +46,11 @@ const members = [
     place: "New Jersey",
     country: "United States",
     url: "https://www.brandongormley.com",
+  },
+  {
+    name: "Mahima Sharma",
+    place: "Delhi",
+    country: "India",
+    url: "https://github.com/mahimas28",
   },
 ];
