@@ -56,16 +56,21 @@ input {
   color: #294C60;
   font-weight: bold;
   border: 3px solid #ADB6C4;
-  transition: width 1.5s, height 1.5s, transform 0.8s;
+  /* transition: width 1.5s, height 1.5s, transform 0.8s; */
+  transition: background .5s ease-in;
 }
 
 #btn__create:hover {
+  background: #ADB6C4;
+}
+
+/* #btn__create:hover {
   transform: rotate(360deg);
 }
 
 #btn__create:hover {
   transform: rotate(360deg);
-}
+} */
 
 .btn__complete,
 .btn__delete {
