@@ -8,6 +8,7 @@ I'm looking forward to see the end result of our project! If you got any questio
 
 ## How to contribute
 
+ Firstly please give this repo a star, then proceed further to these stpes-
 * Fork this repository by clicking the Fork button in the top right
 * Clone your forked repository by opening your terminal and run the following command: 
     
