@@ -320,6 +320,23 @@ span {
   padding-bottom: 10px;
 }
 
+/***Changed padding to increase readability**/
+q{
+  padding-left: 12px;
+  margin: 10px;
+}
+.abot{
+  padding: 10px;
+}
+.coding-quotes-container{
+  margin: 10px;
+}
+.header-container{
+  padding: 10px;
+}
+.container{
+  padding: 10px;
+}
 /* Keyframes */
 
 @keyframes glowing {
