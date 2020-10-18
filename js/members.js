@@ -59,4 +59,10 @@ const members = [
     country: "India",
     url: "https://github.com/mahimas28",
   },
+  {
+    name: "Claire Tregunna",
+    place: "Worcester",
+    country: "United Kingdom",
+    url: "https://github.com/c-tregunna",
+  },
 ];

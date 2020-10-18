@@ -69,9 +69,13 @@ span {
   margin: 0 auto;
   text-align: center;
 }
+.header-container h1 {
+  width: 95%;
+  margin-top: 1.250em;
+}
 .main-nav {
   width: 50%;
-  margin: 20px;
+  margin: 1.250em;
 }
 .main-nav ul {
   display: flex;
@@ -80,17 +84,22 @@ span {
   list-style: none;
 }
 .main-nav ul li {
-  margin: 0 auto;
+  margin: 5px auto;
 }
 .main-nav ul li a {
   font-size: 1.3rem;
   text-decoration: none;
-  color: var(--container-color);
+  color:var(--container-color);
 }
 
 .main-nav ul li a:hover {
   color: var(--main-header-color);
 }
+.about-heading {
+  text-align: center;
+  margin-top: 0.625em;
+}
+
 
 .coding-quote-block {
   margin-bottom: 1.5rem;
