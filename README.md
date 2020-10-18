@@ -1,4 +1,4 @@
-# Hacktober2020
+# Hi,everyone!!Hacktober2020 is here!!
 
 Hey everyone and thanks for checking out my repo for [Hacktoberfest 2020](https://hacktoberfest.digitalocean.com/)!
 
