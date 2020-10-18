@@ -45,7 +45,10 @@ submitTodo.addEventListener("click", createTodo);
 //then move the chosen todo task to the completed div
 
 // const completeButton = document.querySelector(".complete__btn");
-// completeButton.addEventListener('click', () => {
-//   const completedList = document.querySelector(".completed");
+todoList.addEventListener('click', (e) => {
+  if(e.target.textContent = "Complete") {
+  const completedList = document.querySelector(".completed");
+  completedList.style.height = "300px"; //just to test if it works
+}
 
-// })
+})
