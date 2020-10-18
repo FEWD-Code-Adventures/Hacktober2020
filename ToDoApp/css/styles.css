@@ -19,8 +19,25 @@ input {
   margin: 10px auto;
 }
 
-.tasks ul li {
+/* .todo ul li {
   list-style: none;
+
+} */
+
+.complete__btn {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  font-weight: 800;
+  transition: color .5s ease-in-out,
+              background .5s ease-in-out;
+}
+
+.complete__btn:hover {
+  color: #294C60;
+  background: white;
 }
 
 .todolist {
@@ -33,6 +50,10 @@ input {
   padding: 25px;
   background-color: #eee;
   color: #294C60;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .todo[data-importance="low"] {
   border-left: 5px solid yellow;
