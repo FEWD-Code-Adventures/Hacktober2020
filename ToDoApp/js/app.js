@@ -41,6 +41,19 @@ const createTodo = () => {
 
 submitTodo.addEventListener("click", createTodo);
 
+//then move the chosen todo task to the completed div
+
+todoList.addEventListener('click', (e) => {
+  if(e.target.textContent = "Complete") {
+  const completedList = document.querySelector(".completed");
+  const toDoItem = document.querySelector(".todo")
+  completedList.appendChild(toDoItem);
+  toDoItem.classList.add('todo__complete');
+  const completedButton = document.querySelector('.completed .complete__btn');
+  completedButton.remove();
+}
+
+})
 //Cannot read property 'addEventListener' of null - need to figure out why?
 //then move the chosen todo task to the completed div
 
@@ -49,3 +62,4 @@ submitTodo.addEventListener("click", createTodo);
 //   const completedList = document.querySelector(".completed");
 
 // })
+
