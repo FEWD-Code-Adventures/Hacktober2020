@@ -54,3 +54,12 @@ todoList.addEventListener('click', (e) => {
 }
 
 })
+//Cannot read property 'addEventListener' of null - need to figure out why?
+//then move the chosen todo task to the completed div
+
+// const completeButton = document.querySelector(".complete__btn");
+// completeButton.addEventListener('click', () => {
+//   const completedList = document.querySelector(".completed");
+
+// })
+
