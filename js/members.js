@@ -65,4 +65,10 @@ const members = [
     country: "United Kingdom",
     url: "https://github.com/c-tregunna",
   },
+  {
+    name: "Tashan Duncan",
+    place: "Manchester",
+    country: "United Kingdom",
+    url: "https://github.com/MugenCodes",
+  },
 ];
