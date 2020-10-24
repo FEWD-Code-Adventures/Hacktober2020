@@ -39,7 +39,7 @@ const members = [
     name: "Silvia Ramos",
     place: "London",
     country: "United Kingdom",
-    url: "www.silviaramos.me",
+    url: "http://www.silviaramos.me",
   },
   {
     name: "Brandon Gormley",
@@ -64,5 +64,11 @@ const members = [
     place: "Worcester",
     country: "United Kingdom",
     url: "https://github.com/c-tregunna",
+  },
+  {
+    name: "Tashan Duncan",
+    place: "Manchester",
+    country: "United Kingdom",
+    url: "https://github.com/MugenCodes",
   },
 ];
