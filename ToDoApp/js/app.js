@@ -54,6 +54,12 @@ todoList.addEventListener('click', (e) => {
 }
 
 })
+
+todoInput.addEventListener("keyup", function(event){
+  if(event.keyCode === 13){
+    submitTodo.click();
+  }
+});
 //Cannot read property 'addEventListener' of null - need to figure out why?
 //then move the chosen todo task to the completed div
 
