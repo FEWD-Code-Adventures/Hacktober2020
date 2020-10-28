@@ -71,4 +71,9 @@ const members = [
     country: "United Kingdom",
     url: "https://github.com/MugenCodes",
   },
+  { name: "Cooper Hollmaier",
+    place: "Washington",
+    country: "United States",
+    url: "https://cooperhollmaier.com",
+  },
 ];
