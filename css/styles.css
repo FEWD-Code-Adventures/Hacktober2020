@@ -8,9 +8,9 @@
 /* VARIABLES */
 :root {
   --main-background-color: #092540;
-  --second-background-color: #183d5d;
+  --second-background-color: #1c1ea8;
   --main-header-color: #fb8ae2;
-  --container-color: #93c3da;
+  --container-color: #a8d4e9;
   --second-header-color: #fff;
 }
 
@@ -82,9 +82,13 @@ span {
   justify-content: space-between;
   flex-direction: column;
   list-style: none;
+  
 }
 .main-nav ul li {
   margin: 5px auto;
+  background-color: #111416;
+  padding:10px;
+  border-radius: 10px;
 }
 .main-nav ul li a {
   font-size: 1.3rem;
