@@ -8,6 +8,14 @@ body{
   background-color: #294C60;
   line-height: 1.5em;
 }
+
+p {
+  color: white;
+  margin: 20px 0px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
 .container {
   width: 90%;
   max-width: 1100px;
@@ -19,8 +27,25 @@ input {
   margin: 10px auto;
 }
 
-.tasks ul li {
+/* .todo ul li {
   list-style: none;
+
+} */
+
+.complete__btn {
+  border: 1px solid #ddd;
+  padding: 8px;
+  background: black;
+  color: white;
+  border-radius: 4px;
+  font-weight: 800;
+  transition: color .5s ease-in-out,
+              background .5s ease-in-out;
+}
+
+.complete__btn:hover {
+  color: #294C60;
+  background: white;
 }
 
 .todolist {
@@ -33,6 +58,11 @@ input {
   padding: 25px;
   background-color: #eee;
   color: #294C60;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
 }
 .todo[data-importance="low"] {
   border-left: 5px solid yellow;
@@ -56,16 +86,21 @@ input {
   color: #294C60;
   font-weight: bold;
   border: 3px solid #ADB6C4;
-  transition: width 1.5s, height 1.5s, transform 0.8s;
+  /* transition: width 1.5s, height 1.5s, transform 0.8s; */
+  transition: background .5s ease-in;
 }
 
 #btn__create:hover {
+  background: #ADB6C4;
+}
+
+/* #btn__create:hover {
   transform: rotate(360deg);
 }
 
 #btn__create:hover {
   transform: rotate(360deg);
-}
+} */
 
 .btn__complete,
 .btn__delete {
@@ -128,6 +163,15 @@ h2 {
   margin-bottom: 10px;
 }
 
+.completed {
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.todo__complete {
+  background: rgba(173, 255, 47, .7);
+}
 
 /* Keyframes */
 

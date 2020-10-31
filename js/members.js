@@ -15,7 +15,7 @@ const members = [
     name: "Isaac",
     place: "Tauranga",
     country: "New Zealand",
-    url: "https://github.com/IsaacArnold"
+    url: "https://github.com/IsaacArnold",
   },
   {
     name: "Apoorva",
@@ -39,12 +39,41 @@ const members = [
     name: "Silvia Ramos",
     place: "London",
     country: "United Kingdom",
-    url: "www.silviaramos.me",
+    url: "http://www.silviaramos.me",
   },
   {
     name: "Brandon Gormley",
     place: "New Jersey",
     country: "United States",
     url: "https://www.brandongormley.com",
+  },
+  {
+    name: "Tarik Dzambic",
+    place: "Tuzla",
+    country: "Bosnia and Herzegovina",
+    url: "https://github.com/DzambaTz",
+  },
+  {
+    name: "Mahima Sharma",
+    place: "Delhi",
+    country: "India",
+    url: "https://github.com/mahimas28",
+  },
+  {
+    name: "Claire Tregunna",
+    place: "Worcester",
+    country: "United Kingdom",
+    url: "https://github.com/c-tregunna",
+  },
+  {
+    name: "Tashan Duncan",
+    place: "Manchester",
+    country: "United Kingdom",
+    url: "https://github.com/MugenCodes",
+  },
+  { name: "Cooper Hollmaier",
+    place: "Washington",
+    country: "United States",
+    url: "https://cooperhollmaier.com",
   },
 ];

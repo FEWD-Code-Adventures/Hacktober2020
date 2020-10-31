@@ -1,9 +1,9 @@
-/* 
-- ideas to add / change 
+/*
+- ideas to add / change
 
-- make page responsive 
+- make page responsive
 - add variables for colors
-- change values to em/rem units 
+- change values to em/rem units
 */
 /* VARIABLES */
 :root {
@@ -70,9 +70,13 @@ span {
   margin: 0 auto;
   text-align: center;
 }
+.header-container h1 {
+  width: 95%;
+  margin-top: 1.250em;
+}
 .main-nav {
   width: 50%;
-  margin: 20px;
+  margin: 1.250em;
 }
 .main-nav ul {
   display: flex;
@@ -81,16 +85,42 @@ span {
   list-style: none;
 }
 .main-nav ul li {
-  margin: 0 auto;
+  margin: 5px auto;
 }
 .main-nav ul li a {
   font-size: 1.3rem;
   text-decoration: none;
-  color: var(--container-color);
+  color:var(--container-color);
 }
 
 .main-nav ul li a:hover {
   color: var(--main-header-color);
+}
+.about-heading {
+  text-align: center;
+  margin-top: 0.625em;
+}
+
+
+.coding-quote-block {
+  margin-bottom: 1.5rem;
+}
+
+.coding-quotes-title {
+  margin-bottom: 16px;
+}
+
+.coding-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #93c3da;
+}
+
+.coding-quote-author {
+  margin-left: 16px;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #bcd1db;
 }
 
 .coding-quote-block {
@@ -151,6 +181,10 @@ span {
   width: 40%;
   min-width: 300px;
   border-radius: 12px;
+  transition: box-shadow .5s ease-in-out;
+}
+.project:hover {
+  box-shadow: 0px 1px 4px var(--second-header-color);
 }
 .project h3 {
   margin: 10px;
@@ -346,6 +380,7 @@ footer p {
 }
 footer a {
   text-decoration: none;
+  font-size: .80rem;
   color: var(--second-header-color);
 }
 footer a:hover {
