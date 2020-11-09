@@ -8,7 +8,6 @@
 /* VARIABLES */
 :root {
   --main-background-color: #141516;
-  --second-background-color: #4e4e4e;
   --main-header-color: #ffae00;
   --container-color: #ffffff;
   --second-header-color: #fff;
@@ -22,7 +21,8 @@
   font-family: 'Inter Bold', 'Helvetica', 'Arial', san-serif;
 }
 body {
-  background-color: var(--main-background-color);
+  background: rgb(58,97,134);
+  background: linear-gradient(87deg, rgba(58,97,134,1) 0%, rgba(137,37,62,1) 100%);
 }
 .flex-container {
   display: flex;
@@ -45,7 +45,8 @@ body {
 footer {
   width: 100%;
   min-height: 80px;
-  background-color: var(--second-background-color);
+  background: rgb(72,85,99);
+  background: linear-gradient(87deg, rgba(72,85,99,1) 0%, rgba(41,50,60,1) 100%);
   color: var(--main-header-color);
 }
 h1,
@@ -172,7 +173,8 @@ span {
   flex-wrap: wrap;
 }
 .project {
-  background-color: var(--second-background-color);
+  background: rgb(229,93,135);
+  background: linear-gradient(87deg, rgba(229,93,135,1) 0%, rgba(95,195,228,1) 100%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
