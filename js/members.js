@@ -76,4 +76,10 @@ const members = [
     country: "United States",
     url: "https://cooperhollmaier.com",
   },
+  {
+    name: "Zaid Khan",
+    place: "Houston",
+    country: "United States",
+    url: "https://github.com/ZaidKhan144"
+  }
 ];

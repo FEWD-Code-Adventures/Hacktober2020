@@ -9,6 +9,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -67,7 +68,7 @@
               <a href="color-generator/color-generator.html" class="project-link">Go to project</a>
             </div>
             
-            <div class="project">
+            <div class="project" data-aos="fade-up">
               <h3 class="project-name">CountDown to New Year!</h3>
               <p class="project-description">
                 This project is a countdown timer and expires once we enter the year 2021!
@@ -75,7 +76,7 @@
               <a href="./countdown/countdown.html" class="project-link">Go to project</a>
             </div>
 
-            <div class="project">
+            <div class="project" data-aos="fade-up">
               <h3 class="project-name">CountDown to New Year!</h3>
               <p class="project-description">
                 This project is a countdown timer and expires once we enter the year 2021!
@@ -83,7 +84,7 @@
               <a href="./countdown/countdown.html" class="project-link">Go to project</a>
             </div>
 
-            <div class="project">
+            <div class="project" data-aos="fade-right">
               <h3 class="project-name">Ready to Code?</h3>
               <p class="project-description">
                 Quick little JS event listener to get you ready to code
@@ -92,7 +93,7 @@
               <p class="lets-code-text" id="code-text"></p>
             </div>
 
-            <div class="project">
+            <div class="project" data-aos="fade-left">
               <h3 class="project-name">Responsive Menu</h3>
               <p class="project-description">
                 A simple mobile responsive menu
@@ -128,7 +129,15 @@
 
   </div>
   <script src="js/projects.js"></script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+        {
+            offset: 300,
+            duration: 500
+        }
+    );
+  </script>
 </body>
 
 </html>
